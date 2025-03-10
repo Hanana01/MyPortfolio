@@ -1,0 +1,113 @@
+#home {
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width: 100vw;
+    padding: 50px;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.home-text h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.hire-btn, .resume-btn {
+    color: #32cd32;  /* LimeGreen */
+    border: 2px solid #32cd32; /* Set border */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px; /* Rounded edges */
+}
+
+.hire-btn:hover {
+    background: #32cd32;
+    color: white;
+}
+
+.download-icon {
+    font-size: 16px;
+    
+}
+
+.resume-btn a, .hire-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.resume-btn:hover a {
+    color: white;
+}
+
+.resume-btn:hover {
+    background: #32cd32;
+    color: white;
+}
+
+
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #333; /* Green color */
+    font-size: 20px; /* Adjust icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #228b22; /* Darker green on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Image Styling */
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.home-image img {
+    width: 300px;
+    height: auto;
+    border: 4px solid #32cd32;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

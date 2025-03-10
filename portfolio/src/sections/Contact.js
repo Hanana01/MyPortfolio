@@ -3,10 +3,10 @@ import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <div>
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out!</p>
-    </div>
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>Let's get in touch!</p>
+    </section>
   );
 };
 

@@ -1,6 +1,20 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+section {
+    padding: 100px 20px;
+    min-height: 50vh;
+    width: 100vw; /* Ensures full viewport width */
+    margin: 50px 0 0;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+  #about {
+    background: #d4e157;
+  }
+  
+  #projects {
+    background: #64b5f6;
+  }
+  
+  #contact {
+    background: #ff8a65;
   }
   
