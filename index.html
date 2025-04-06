@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanana - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+</head>
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-lg py-4 px-8 flex justify-between items-center z-50">
+    <!-- Logo -->
+    <a href="#" class="text-2xl font-bold text-indigo-800">
+        MyPortfolio
+    </a>
+
+
+    <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="#home" class="hover:text-indigo-500 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-indigo-500 transition">About</a></li>
+            <li><a href="#experience" class="hover:text-indigo-500 transition">Experience</a></li>
+            <li><a href="#skills" class="hover:text-indigo-500 transition">Skills</a></li>
+            <li class="relative group">
+                <a href="#projects" class="hover:text-indigo-500 transition flex items-center">
+                    Projects
+                    <!-- Dropdown Icon -->
+                    <svg class="ml-2 w-4 h-4 transition-transform group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+            
+                <!-- Dropdown Menu -->
+                <ul class="absolute left-0 mt-2 w-60 bg-white shadow-md border border-indigo-300 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 invisible group-hover:visible">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md hover:text-indigo-500 transition">
+                            DCCMS
+                        </a>
+                    </li>                  
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md hover:text-indigo-500 transition">CEM</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md hover:text-indigo-500 transition">Career Guidance System</a></li>
+                </ul>
+            </li>
+            <li><a href="#blog" class="hover:text-indigo-500 transition">Blogs</a></li>
+            <li><a href="#contact" class="hover:text-indigo-500 transition">Contact</a></li>
+        </ul>
+
+        <a href="#contact"
+        class="hidden md:inline-flex items-center gap-2 
+               text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
+               px-6 py-2.5 rounded-full font-semibold tracking-wide shadow-lg 
+               hover:from-indigo-800 hover:to-indigo-500 
+               hover:scale-105 hover:shadow-2xl transition-all duration-300">
+        Hire Me
+     </a>    
+                 
+    <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+            ☰
+        </button>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center justify-center bg-gray-50 shadow-lg pt-20 relative">
+    <div class="flex items-center justify-between w-full px-6">
+      <!-- Left side: Text -->
+      <div class="w-1/2 text-center md:text-left">
+        <div class="flex items-center space-x-2">
+          <h1 class="text-5xl font-bold hero-text">Hi, I'm</h1>
+          <h1 class="text-5xl font-bold hero-text text-indigo-800">Fathima Hanana</h1>
+        </div>
+        <p class="text-2xl mt-4">Final Year IT Undergraduate.</p>
+        <p class="text-lg mt-8">Empowering minds through teaching and building impactful digital solutions that make a difference in tech world.</p>
+        <p class="text-lg mt-2">From equations to code, my passion for math and IT drives me to create solutions that are both precise and impactful.</p><br>
+  
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#contact" class="text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
+            px-6 py-2.5 rounded-full font-semibold tracking-wide shadow-lg 
+            hover:from-indigo-800 hover:to-indigo-500 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+            Hire Me
+          </a>
+            <!-- Resume-->
+            <a href="resume.pdf" download class="text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
+            px-6 py-2.5 rounded-full font-semibold tracking-wide shadow-lg
+            hover:from-indigo-800 hover:to-indigo-500 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+            Download Resume
+            </a>
+        </div>
+  
+        <!-- Social Icons -->
+        <div class="mt-6 flex justify-center md:justify-start space-x-6 text-indigo-900 text-2xl">
+          <a href="https://github.com/Hanana01" target="_blank" class="hover:text-indigo-600">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fathimahanana/" target="_blank" class="hover:text-indigo-600">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:hananaf2001@gmail.com" class="hover:text-indigo-600">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Right side: Animated Image -->
+      <div class="w-1/2 h-screen flex items-center justify-center px-5 py-10">
+        <img src="images/Hana.webp" 
+             alt="Animated Image" 
+             class="w-80 h-80 rounded-full object-cover border-2 border-indigo-800 shadow-lg shadow-indigo-700/50 hover:shadow-2xl hover:shadow-indigo-800/80 hover:scale-105 transition-all duration-300 ease-in-out" />
+      </div>
+    </div>
+  </section>
+  
+
+<!-- About Section -->
+<section id="about" class="h-screen bg-gray-100 py-16 px-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Heading -->
+        <h2 class="mt-4 text-4xl font-bold text-indigo-800 text-center mb-12">About Me</h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-7xl">
+
+            <!-- Left Side: Image + Description -->
+            <div class="md:w-1/2 w-full flex flex-col items-center text-center">
+                <!-- Image -->
+                <img src="images/Hanana.webp" 
+                     alt="About Image"
+                     class="w-60 h-auto rounded-lg rotate-6 object-cover shadow-lg shadow-indigo-300 transition-transform duration-500 hover:scale-105 hover:rotate-1" />
+
+                <!-- Description -->
+                <p class="mt-6 text-gray-700 text-lg max-w-md">
+                    Highly motivated and results-oriented IT undergraduate with a strong foundation in Java, Python, Data Structures & Algorithms. 
+                    Eager to contribute to a dynamic team and learn from experienced professionals while developing innovative solutions.              </p>
+            </div>
+
+            <!-- Right Side: Education -->
+            <div class="md:w-1/2 w-full ml-12">
+                <div class="p-4">
+                    <h2 class="text-3xl font-semibold text-black mb-6 text-center md:text-left">Education</h2>
+
+                    <!-- Education Cards -->
+                    <div class="space-y-4 ">
+                        <!-- University -->
+                        <div class="px-4 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
+                            <span class="bg-gradient-to-r from-indigo-400 to-indigo-800 bg-clip-text text-transparent font-bold text-lg">
+                                B.Sc.(Hons) in Information Technology
+                            </span>
+                            <p class="text-sm text-gray-500">University of Moratuwa | 2021-2025</p>
+                            <p class="text-sm text-gray-500">Grade: 3.61 (Second Class Upper)</p>
+                        </div>
+
+                        <!-- A/L -->
+                        <div class="px-6 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
+                            <span class="bg-gradient-to-r from-indigo-400 to-indigo-800 bg-clip-text text-transparent font-bold text-lg">
+                                G.C.E. Advanced Level (Physical Science Stream)
+                            </span>
+                            <p class="text-sm text-gray-500">BT/BC/Kattankudy Central College (NS) | 2017–2019</p>
+                            <p class="text-sm text-gray-500">Results: ABC</p>
+                        </div>
+
+                        <!-- O/L -->
+                        <div class="px-6 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
+                            <span class="bg-gradient-to-r from-indigo-400 to-indigo-800 bg-clip-text text-transparent font-bold text-lg">
+                                G.C.E. Ordinary Level
+                            </span>
+                            <p class="text-sm text-gray-500">BT/BC/Al Ameen Vidyalaya (NS) | 2006–2016</p>
+                            <p class="text-sm text-gray-500">Results: 9A's</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Experience Section -->
+<section id="experience" class="bg-gray-100 py-16 px-8">
+    <div class="max-w-5xl mx-auto">
+      <!-- Heading -->
+      <h2 class="mt-4 text-4xl font-bold text-indigo-800 text-center mb-12">Work Experience</h2>
+  
+      <!-- Experience Card -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-indigo-200 transition-shadow duration-300 p-8">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <!-- Company Info -->
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800">Software Engineer Intern</h3>
+            <p class="text-gray-600 text-sm">Amirda Pvt Ltd | Jan 2024 – Jun 2024</p>
+          </div>
+  
+          <!-- Tag -->
+          <div class="mt-4 md:mt-0">
+            <span class="inline-block px-4 py-1 text-sm bg-indigo-100 text-indigo-700 rounded-full font-medium">
+              Internship
+            </span>
+          </div>
+        </div>
+  
+        <!-- Description -->
+        <p class="mt-6 text-gray-700 leading-relaxed">
+          During my internship at Amirda Pvt Ltd, I contributed to multiple real-time projects using technologies such as MERN, MEAN, PHP, MySQL, and WordPress. I developed full-stack features, implemented dashboards, handled event calendars, managed API integrations, and created user-friendly interfaces. I also participated in leadership workshops, technical training, and project deployments. This hands-on experience improved my skills in teamwork, problem-solving, and digital product development.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Skills Section Continued -->
+<section id="skills" class="bg-white py-16 px-8">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-indigo-800 mb-10 text-center mt-4">I'm Good At</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-html5 text-4xl text-orange-500"></i>
+                <p class="mt-2 text-gray-700 font-semibold">HTML5</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+                <p class="mt-2 text-gray-700 font-semibold">CSS3</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-bootstrap text-4xl text-purple-600"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Bootstrap</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-js-square text-4xl text-yellow-500"></i>
+                <p class="mt-2 text-gray-700 font-semibold">JavaScript</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-react text-4xl text-blue-400"></i>
+                <p class="mt-2 text-gray-700 font-semibold">React</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-node-js text-4xl text-green-500"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Node.js</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fas fa-database text-4xl text-indigo-700"></i>
+                <p class="mt-2 text-gray-700 font-semibold">MySQL / MongoDB</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-php text-4xl text-indigo-500"></i>
+                <p class="mt-2 text-gray-700 font-semibold">PHP</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-python text-4xl text-yellow-400"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Python</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-java text-4xl text-orange-700"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Java</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fas fa-cogs text-4xl text-green-600"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Spring Boot</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fas fa-code text-4xl text-blue-700"></i>
+                <p class="mt-2 text-gray-700 font-semibold">C</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-10 h-10 mx-auto" alt="Figma icon">
+                <p class="mt-2 text-gray-700 font-semibold">Figma</p>
+            </div>
+            
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-trello text-4xl text-blue-800"></i>
+                <p class="mt-2 text-gray-700 font-semibold">Trello</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-github text-4xl text-gray-800"></i>
+                <p class="mt-2 text-gray-700 font-semibold">GitHub</p>
+            </div>
+            <div class="bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
+                <i class="fab fa-wordpress text-4xl text-black"></i>
+                <p class="mt-2 text-gray-700 font-semibold">WordPress</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="min-h-screen">
+    <div class="px-8 py-12">
+      <h1 class="text-4xl font-bold hero-text text-indigo-800 text-center mt-4">My Latest Projects</h1>
+  
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 mt-10">
+  
+        <!-- DCCMS Project Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/dccms.webp" alt="District Court Case Management System" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">District Court Case Management System (DCCMS)</h2>
+            <p class="mt-2 text-sm">Web-based system to manage user roles, court cases, case assignments, document uploads, and reports with a statistical admin dashboard.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: HTML, CSS, JS, Python, MySQL</p>
+          </div>
+        </div>
+  
+        <!-- CEM Project Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/cem.webp" alt="Customer Employee Management System" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">Customer Employee Management System (CEM)</h2>
+            <p class="mt-2 text-sm">CRM and HRM system with leave management, invoicing, and employee tracking. Integrated with dynamic React.js frontend and Spring Boot backend.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: React.js, Spring Boot, MySQL</p>
+          </div>
+        </div>
+  
+        <!-- Career Guidance Project Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/career-guide.webp" alt="Career Guidance System" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">Career Guidance System</h2>
+            <p class="mt-2 text-sm">Interactive quiz-based website that analyzes user responses and recommends career paths. Includes user registration and an admin dashboard.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: HTML, CSS, JS, PHP, MySQL</p>
+          </div>
+        </div>
+  
+        <!-- ShopMart E-commerce Project Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/shopmart.webp" alt="ShopMart E-commerce Website" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">ShopMart E-commerce Website</h2>
+            <p class="mt-2 text-sm">A full-featured e-commerce platform with product management, orders, suppliers, invoices, and dashboards.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: React.js, Node.js, Express.js, MySQL</p>
+          </div>
+        </div>
+  
+        <!-- Memorial Trust Website Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/memorial.webp" alt="Memorial Trust Website" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">Sharatha Memorial Trust Website</h2>
+            <p class="mt-2 text-sm">Informative WordPress site featuring the life and works of Sharatha. Includes donation page, gallery, and history.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: WordPress, Plugins</p>
+          </div>
+        </div>
+  
+        <!-- Blog Management System Card -->
+        <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+          <div class="h-48 bg-gray-700 flex items-center justify-center">
+            <img src="images/blog.webp" alt="Blog Management System" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6 text-gray-800">
+            <h2 class="text-black text-2xl font-bold">Blog Management System</h2>
+            <p class="mt-2 text-sm">A MERN stack application to post, update, and comment on blog articles with image uploads and rating system.</p>
+            <p class="mt-2 text-sm font-medium text-gray-600">Tech: MongoDB, Express.js, React.js, Node.js</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-100 py-16 px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-800 mb-6">
+        Let's Connect and Share Your Ideas
+      </h2>
+      <p class="text-gray-600 mb-6">
+        Feel free to reach out for collaborations, freelance opportunities, or just to say hello!
+      </p>
+      <a href="mailto:hananaf2001@gmail.com"
+         class="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition"
+         aria-label="Send an email to Hanana">
+        <!-- Optional: Heroicon mail icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0H8m4-8v16" />
+        </svg>
+        Send Email
+      </a>
+    </div>
+  </section>
+  
+
+<!-- Footer Section -->
+<footer class="bg-black text-white py-12 pt-12">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+            <!-- Personal Info -->
+            <div>
+                <a href="#" class="text-2xl font-bold text-indigo-500">
+                    MyPortfolio
+                </a>                
+                <p class="text-gray-400 mt-2">Hi, I'm Hanana — passionate about teaching and building digital solutions. Whether you're starting out or scaling up, I'm here to help you turn your ideas into impactful results with creativity and strategy.</p>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-xl font-semibold text-indigo-500">Services</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Software Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Fullstack Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Project Management</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Tutoring</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-indigo-500">Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">About Me</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Experience</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Skills</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Projects</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Blogs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-indigo-500">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold text-indigo-500">Contact Me</h3>
+                <p class="text-gray-400 mt-2">Email: hananaf2001@gmail.com</p>
+                <p class="text-gray-400">Phone: +94 78 16 89 565</p>
+                <p class="text-gray-400">Location: Colombo, Sri Lanka.</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-700 my-6"></div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col md:flex-row items-center justify-between text-gray-500 text-sm">
+            <p>© 2025 Hanana. All Rights Reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://github.com/Hanana01" class="text-2xl hover:text-indigo-500"><i class="fab fa-github"></i></a>
+                <a href="mailto:hananaf2001@gmail.com" class="text-2xl hover:text-indigo-500"><i class="fas fa-envelope-open-text"></i></a>
+                <a href="https://www.linkedin.com/in/fathimahanana/" class="text-2xl hover:text-indigo-500"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-indigo-500"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="fixed bottom-6 right-6 bg-black p-4 rounded-full shadow-lg hover:scale-110 transition">
+    <a href="#" class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#00308F" viewBox="0 0 24 24" width="32" height="32">
+            <path d="M2 21l1.5-5.5A9 9 0 1112 21H2z"></path>
+        </svg>
+    </a>
+</div>
+
+
+</body>
+</html>
