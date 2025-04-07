@@ -9,12 +9,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
         
 </head>
 
 
 
-<body class="font-sans">
+<body class="font-body">
 
     <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full bg-white shadow-lg py-4 px-8 flex justify-between items-center z-50">
@@ -65,8 +67,8 @@
   </nav>
 
 <!-- Mobile Menu (Hidden by default) -->
-<div id="mobile-menu" class="md:hidden fixed top-16 left-0 w-full bg-white shadow-lg hidden z-40">
-  <ul class="flex flex-col space-y-2 py-4 px-6 text-gray-700">
+<div id="mobile-menu" class="md:hidden fixed top-16 left-0 w-full bg-black shadow-lg hidden z-40">
+  <ul class="flex flex-col space-y-2 py-4 px-6 text-indigo-500 font-semibold">
     <li><a href="#home" class="block px-4 py-2 rounded hover:bg-indigo-100 hover:text-indigo-600 transition">Home</a></li>
     <li><a href="#about" class="block px-4 py-2 rounded hover:bg-indigo-100 hover:text-indigo-600 transition">About</a></li>
     <li><a href="#services" class="block px-4 py-2 rounded hover:bg-indigo-100 hover:text-indigo-600 transition">Services</a></li>
@@ -85,27 +87,24 @@
     <!-- Left side: Text -->
 <div class="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0">
   <div class="flex items-center justify-center md:justify-start space-x-2">
-    <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold hero-text">Hi, I'm</h1>
-    <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold hero-text text-indigo-800">Fathima Hanana</h1>
+    <h1 class="font-[Poppins]  text-2xl sm:text-4xl md:text-6xl font-bold hero-text">Hi, I'm</h1>
+    <h1 class="font-[Poppins]  text-2xl sm:text-4xl md:text-6xl font-bold hero-text text-indigo-800">Fathima Hanana</h1>
   </div>
-  <p class="text-base sm:text-xl md:text-2xl mt-4 font-semibold">
-    Final Year IT Undergraduate at University of Moratuwa.
+  <p class="font-[Open_Sans]  text-base sm:text-xl md:text-4xl mt-4 font-semibold">
+    IT Undergraduate at University of Moratuwa.
   </p>
-  <p class="text-sm sm:text-base md:text-lg mt-6">
-    Empowering minds through teaching and building impactful digital solutions that make a difference in tech world.
-  </p>
-  <p class="text-sm sm:text-base md:text-lg mt-2">
-    From equations to code, my passion for math and IT drives me to create solutions that are both precise and impactful.
+  <p class="font-[Open_Sans] text-sm sm:text-base md:text-lg mt-6">
+    Empowering minds through teaching and building impactful digital solutions that make a difference in tech world. From equations to code, my passion for math and IT drives me to create solutions that are both precise and impactful.
   </p>
 
   <!-- Buttons -->
   <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
-    <a href="#contact" class="text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
+    <a href="#contact" class="font-[Poppins] text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
       px-6 py-2.5 rounded-full font-semibold tracking-wide shadow-lg 
       hover:from-indigo-800 hover:to-indigo-500 hover:scale-105 hover:shadow-2xl transition-all duration-300">
       Hire Me
     </a>
-    <a href="resume.pdf" download class="text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
+    <a href="resume.pdf" download class="font-[Poppins] text-white bg-gradient-to-r from-indigo-500 to-indigo-800 
       px-6 py-2.5 rounded-full font-semibold tracking-wide shadow-lg
       hover:from-indigo-800 hover:to-indigo-500 hover:scale-105 hover:shadow-2xl transition-all duration-300">
       Download Resume
@@ -113,14 +112,14 @@
   </div>
 
       <!-- Social Icons -->
-      <div class="mt-6 flex justify-center md:justify-start space-x-6 text-indigo-900 text-2xl">
-        <a href="https://github.com/Hanana01" target="_blank" class="hover:text-indigo-600">
+      <div class="mt-6 flex justify-center md:justify-start space-x-6 text-indigo-700 text-2xl mb-6">
+        <a href="https://github.com/Hanana01" target="_blank" class="hover:text-indigo-900">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fathimahanana/" target="_blank" class="hover:text-indigo-600">
+        <a href="https://www.linkedin.com/in/fathimahanana/" target="_blank" class="hover:text-indigo-900">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="mailto:hananaf2001@gmail.com" class="hover:text-indigo-600">
+        <a href="mailto:hananaf2001@gmail.com" class="hover:text-indigo-900">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
@@ -139,11 +138,11 @@
   
 
 <!-- About Section -->
-<section id="about" class="min-h-screen bg-gray-100 py-16 px-8">
+<section id="about" class="min-h-screen  py-16 px-8">
   <div class="max-w-6xl mx-auto">
     
     <!-- Heading -->
-    <h2 class="mt-4 text-4xl font-bold text-indigo-800 text-center mb-12">About Me</h2>
+    <h2 class="mt-4 text-4xl font-bold text-indigo-800 text-center mb-12 font-[Poppins] ">About Me</h2>
 
     <div class="flex flex-col lg:flex-row items-center justify-center gap-10 w-full max-w-7xl">
 
@@ -153,7 +152,7 @@
              alt="Fathima Hanana" 
              class="w-40 h-auto rounded-lg object-cover shadow-lg shadow-indigo-300 transition-transform duration-500 hover:scale-105 hover:rotate-1" />
         
-        <p class="mt-6 text-gray-700 text-lg max-w-md">
+        <p class="mt-6 text-gray-700 text-lg max-w-md font-[Open_Sans] text-justify">
           Highly motivated and results-oriented IT undergraduate with a strong foundation in Java, Python, and Data Structures & Algorithms.
           Eager to contribute to dynamic teams and learn from experienced professionals while developing innovative tech solutions.
         </p>
@@ -162,31 +161,31 @@
       <!-- Right Side: Education -->
       <div class="lg:w-1/2 w-full">
         <div class="p-4">
-          <h2 class="text-3xl font-semibold text-black mb-6 text-center lg:text-left">Education</h2>
+          <h2 class="text-3xl font-semibold text-black mb-6 text-center lg:text-left font-[Poppins] ">Education</h2>
 
           <div class="space-y-4">
-            <div class="px-6 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
-              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold">
+            <div class="px-6 py-4 bg-indigo-50 rounded-lg shadow-lg text-left text-lg">
+              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold font-[Poppins] ">
                 B.Sc. (Hons) in Information Technology
               </span>
-              <p class="text-sm text-gray-500">University of Moratuwa | 2021 – 2025</p>
-              <p class="text-sm text-gray-500">GPA: 3.61 (Second Class Upper Division)</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">University of Moratuwa | 2021 – 2025</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">GPA: 3.61 (Second Class Upper Division)</p>
             </div>
 
-            <div class="px-6 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
-              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold">
+            <div class="px-6 py-4 bg-indigo-50 rounded-lg shadow-lg text-left text-lg">
+              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold font-[Poppins] ">
                 G.C.E. Advanced Level (Physical Science Stream)
               </span>
-              <p class="text-sm text-gray-500">BT/BC/Kattankudy Central College (NS) | 2017 – 2019</p>
-              <p class="text-sm text-gray-500">Results: A, B, C</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">BT/BC/Kattankudy Central College (NS) | 2017 – 2019</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">Results: ABC</p>
             </div>
 
-            <div class="px-6 py-4 bg-white rounded-lg shadow-lg text-left text-lg">
-              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold">
+            <div class="px-6 py-4 bg-indigo-50 rounded-lg shadow-lg text-left text-lg">
+              <span class="bg-gradient-to-r from-indigo-500 to-indigo-800 bg-clip-text text-transparent font-bold font-[Poppins] ">
                 G.C.E. Ordinary Level
               </span>
-              <p class="text-sm text-gray-500">BT/BC/Al Ameen Vidyalaya (NS) | 2006 – 2016</p>
-              <p class="text-sm text-gray-500">Results: 9 A's</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">BT/BC/Al Ameen Vidyalaya (NS) | 2006 – 2016</p>
+              <p class="text-sm text-gray-500 font-[Open_Sans]">Results: 9 A's</p>
             </div>
           </div>
         </div>
@@ -202,7 +201,7 @@
 <!-- Services Section -->
 <section id="services" class="bg-gradient-to-r from-indigo-200 via-white to-indigo-100 py-16">
   <div class="max-w-6xl mx-auto px-8">
-    <h2 class="text-4xl font-bold text-center text-indigo-800 mb-12">My Services</h2>
+    <h2 class="text-4xl font-bold text-center text-indigo-800 mb-12 font-[Poppins] ">My Services</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center">
 
@@ -211,48 +210,48 @@
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="code" class="text-white w-8 h-8" ></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">Software Development</h3>
-        <p class="mt-2 text-sm text-gray-700">Custom software tailored to business needs.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">Software Development</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Custom software tailored to business needs.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="layers" class="text-white w-8 h-8"></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">Fullstack Development</h3>
-        <p class="mt-2 text-sm text-gray-700">Frontend + backend + database expertise for web apps.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">Fullstack Development</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Frontend + backend + database expertise for web apps.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="globe" class="text-white w-8 h-8"></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">Web Development</h3>
-        <p class="mt-2 text-sm text-gray-700">Responsive and fast websites that perform well.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">Web Development</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Responsive and fast websites that perform well.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="clipboard-list" class="text-white w-8 h-8"></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">Project Management</h3>
-        <p class="mt-2 text-sm text-gray-700">Efficiently managing timelines and teams.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">Project Management</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Efficiently managing timelines and teams.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="graduation-cap" class="text-white w-8 h-8"></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">Tutoring</h3>
-        <p class="mt-2 text-sm text-gray-700">Guidance and support for beginners and learners.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">Tutoring</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Guidance and support for beginners and learners.</p>
       </div>
 
       <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
         <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center shadow-md">
           <i data-lucide="palette" class="text-white w-8 h-8"></i>
         </div>
-        <h3 class="mt-4 text-lg font-semibold text-indigo-800">UI/UX & Graphic Design</h3>
-        <p class="mt-2 text-sm text-gray-700">Crafting beautiful and user-friendly interfaces.</p>
+        <h3 class="mt-4 text-lg font-semibold text-indigo-800 font-[Poppins] ">UI/UX & Graphic Design</h3>
+        <p class="mt-2 text-sm text-gray-700 font-[Open_Sans]">Crafting beautiful and user-friendly interfaces.</p>
       </div>
 
     </div>
@@ -266,11 +265,11 @@
 
 
 <!-- Experience Section -->
-<section id="experience" class="bg-gray-100 py-20 px-8">
+<section id="experience" class="py-20 px-8">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-4xl font-bold text-indigo-800 text-center mb-12">Work Experience</h2>
+    <h2 class="text-4xl font-bold text-indigo-800 text-center mb-12 font-[Poppins] ">Work Experience</h2>
 
-    <div class="bg-white rounded-xl shadow-md hover:shadow-indigo-200 transition-shadow duration-300 p-8">
+    <div class="bg-gray-50 rounded-xl shadow-md hover:shadow-indigo-200 transition-shadow duration-300 p-8 font-[Open_Sans]">
       <div class="flex flex-col md:flex-row md:justify-between md:items-center">
         <div>
           <h3 class="text-2xl font-semibold text-gray-800">Software Engineer Intern</h3>
@@ -297,10 +296,10 @@
 <!-- Skills Section -->
 <section id="skills" class="bg-white py-16 px-8">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-4xl font-bold text-indigo-800 mb-10 text-center mt-4">I'm Good At</h2>
+    <h2 class="text-4xl font-bold text-indigo-800 mb-10 text-center mt-4 font-[Poppins] ">I'm Good At</h2>
     
     <!-- Skills Grid -->
-    <div id="skillsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+    <div id="skillsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center font-[Open_Sans]">
       <!-- Skill Cards (All 16) -->
       <!-- Each card wrapped in a hidden-row class for JS toggling -->
       <div class="skill-card bg-gray-100 py-6 px-4 rounded-lg shadow hover:shadow-lg transition">
@@ -382,16 +381,16 @@
 
 
 <!-- Projects Section -->
-<section id="projects" class="min-h-screen bg-gradient-to-r from-indigo-300 to-indigo-400 pb-10">
+<section id="projects" class="min-h-screen bg-gradient-to-r from-indigo-200 to-indigo-300 pb-10">
   <div class="px-4 sm:px-8 py-12">
-    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold hero-text text-black text-center mt-4">My Latest Projects</h1>
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold hero-text text-black text-center mt-4 font-[Poppins] ">My Latest Projects</h1>
 
     <!-- Project Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
       
       <!-- Project Card Template -->
       <!-- DCCMS Project Card -->
-      <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+      <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105 font-[Open_Sans]">
         <div class="h-40 sm:h-48 md:h-56 bg-gray-700 flex items-center justify-center">
           <img src="images/dccms.png" alt="District Court Case Management System" class="w-full h-full object-cover" />
         </div>
@@ -476,10 +475,10 @@
 <!-- Contact Section -->
 <section id="contact" class="bg-gray-100 py-16 px-8">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-800 mb-6">
+      <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-800 mb-6 font-[Poppins] ">
         Let's Connect and Say Hello!
       </h2>
-      <p class="text-gray-600 mb-6">
+      <p class="text-gray-600 mb-6 font-[Open_Sans]">
         Feel free to reach out for collaborations, freelance opportunities, or just to say hi!
       </p>
       <a href="mailto:hananaf2001@gmail.com"
